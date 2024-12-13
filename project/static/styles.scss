@@ -30,9 +30,16 @@ $font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 // IMPORT SASS
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Custom Bootstrap
+$btn-primary: $blue;
+
 // Styling
 body {
     background-color: $bg-primary;
+    font-family: $font-family-main;
+}
+
+#navigation-bar {
     font-family: $font-family-main;
 }
 

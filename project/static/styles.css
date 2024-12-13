@@ -11970,6 +11970,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#navigation-bar {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #navigation-bar > #primary-navbar {
   background-color: #FFFFFF;
 }
