@@ -1,0 +1,49 @@
+// Palette
+$white: #FFFFFF;
+$gray: #EFEFEF;
+$black: #000000;
+$darkgray: #393939;
+$blue: #4D83FF;
+$darkblue: #2E4F99;
+$green: #83b434;
+$red: #b72b2b;
+
+// SPECIFIED
+$bg-primary: $gray;
+$bg-secondary: $white;
+
+$navbar-primary: $white;
+$navbar-secondary: $darkgray;
+
+$success: $green;
+$failed: $red;
+
+$text-primary: $black;
+$text-secondary: $white;
+
+$border-color: $darkgray;
+
+// FONT
+$font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// OVERRIDE BOOTSTRAP THEMES
+// IMPORT SASS
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Styling
+body {
+    background-color: $bg-primary;
+    font-family: $font-family-main;
+}
+
+#navigation-bar>#primary-navbar {
+    background-color: $navbar-primary;
+}
+
+#navigation-bar>#secondary-navbar {
+    background-color: $navbar-secondary;
+}
+
+.nav-link {
+    font-size: 22;
+}
