@@ -3,7 +3,7 @@ $white: #FFFFFF;
 $gray: #EFEFEF;
 $black: #000000;
 $darkgray: #393939;
-$blue: #4D83FF;
+$mainblue: #4D83FF;
 $darkblue: #2E4F99;
 $green: #83b434;
 $red: #b72b2b;
@@ -27,17 +27,44 @@ $border-color: $darkgray;
 $font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 // OVERRIDE BOOTSTRAP THEMES
+.btn-primary {
+    color: $mainblue;
+}
+
+.btn-outline-primary {
+    color: $white;
+    border-color: $black;
+
+    &:hover {
+        background-color: $darkblue;
+        border-color: $mainblue;
+    }
+}
+
+.btn-outline-secondary {
+    color: $white;
+    border-color: $black;
+
+    &:hover {
+        background-color: $darkblue;
+        border-color: $mainblue;
+    }
+}
+
+
 // IMPORT SASS
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Custom Bootstrap
-$btn-primary: $blue;
+
 
 // Styling
 body {
     background-color: $bg-primary;
     font-family: $font-family-main;
 }
+
+
 
 #navigation-bar {
     font-family: $font-family-main;

@@ -60,18 +60,18 @@
                         </li>
                     </ul>
 
-                    <form class="d-flex me-5 mb-0" action="search">
+                    <form class="d-flex me-4 mb-0" action="search">
                         <input class="form-control pe-5 rounded-end-0" type="search" value="{{query}}" id="Search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-light btn-outline-dark rounded-start-0" type="submit">
+                        <button class="btn btn-light btn-outline-secondary rounded-start-0" type="submit">
                             <img src="https://files.catbox.moe/8mq0vu.png" alt="Search" width="24" height="24">
                         </button>
                     </form>
 
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         {% if not session.get('user_id') %}
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-primary text-white">Login</button>
-                        </li>
+                        <div class="d-grid gap-2 ">
+                            <button type="button" class="btn btn-primary text-white fw-medium fs-4 px-lg-5" id="LOGIN">LOGIN</button>
+                        </div>
                         {% endif %}
 
                         {% if session.get('user_id') %}
@@ -106,18 +106,6 @@
 
     {%endblock%}
 </body>
-
-<!-- Time (Client-side) -->
-<script>
-    function displayTime() {
-        var currentTime = new Date();
-        var options = { hour: 'numeric', minute: 'numeric' };
-        var formattedTime = currentTime.toLocaleString('en-US', options);
-        document.getElementById('currentTime').textContent = formattedTime;
-    }
-
-    setInterval(displayTime, 1000); // Update time every second
-</script>
 
 <!-- Bootstrap-Popper -->
 <script 
